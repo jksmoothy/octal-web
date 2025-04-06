@@ -1,9 +1,11 @@
 :root {
     --primary-color: #6366f1;
-    --text-color: #1f2937;
-    --background-color: #ffffff;
-    --secondary-background: #f9fafb;
-    --border-color: #e5e7eb;
+    --text-color: #f3f4f6;
+    --background-color: #111827;
+    --secondary-background: #1f2937;
+    --border-color: #374151;
+    --card-background: #1f2937;
+    --text-secondary: #9ca3af;
 }
 
 * {
@@ -16,6 +18,7 @@ body {
     font-family: 'Inter', sans-serif;
     color: var(--text-color);
     line-height: 1.5;
+    background-color: var(--background-color);
 }
 
 /* Header Styles */
@@ -25,7 +28,7 @@ body {
     left: 0;
     right: 0;
     background: var(--background-color);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
     z-index: 1000;
 }
 
@@ -97,7 +100,7 @@ body {
 
 .hero-content p {
     font-size: 1.25rem;
-    color: #4b5563;
+    color: var(--text-secondary);
     margin-bottom: 2rem;
 }
 
@@ -129,10 +132,11 @@ body {
 }
 
 .feature-card {
-    background: var(--background-color);
+    background: var(--card-background);
     padding: 2rem;
     border-radius: 1rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--border-color);
 }
 
 .feature-card h3 {
@@ -160,11 +164,12 @@ body {
 }
 
 .pricing-card {
-    background: var(--background-color);
+    background: var(--card-background);
     padding: 2rem;
     border-radius: 1rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     text-align: center;
+    border: 1px solid var(--border-color);
 }
 
 .pricing-card.featured {
@@ -185,7 +190,7 @@ body {
 
 .price span {
     font-size: 1rem;
-    color: #6b7280;
+    color: var(--text-secondary);
 }
 
 .pricing-card ul {
@@ -195,6 +200,7 @@ body {
 
 .pricing-card li {
     margin-bottom: 0.5rem;
+    color: var(--text-secondary);
 }
 
 /* Footer */
@@ -218,7 +224,7 @@ footer {
 
 .footer-section a {
     display: block;
-    color: #6b7280;
+    color: var(--text-secondary);
     text-decoration: none;
     margin-bottom: 0.5rem;
 }
@@ -229,7 +235,7 @@ footer {
     padding-top: 2rem;
     border-top: 1px solid var(--border-color);
     text-align: center;
-    color: #6b7280;
+    color: var(--text-secondary);
 }
 
 /* Responsive Design */
