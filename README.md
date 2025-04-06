@@ -1,6 +1,6 @@
-# Superhuman-inspired Website
+# Octal Data Website
 
-A modern, responsive website inspired by Superhuman's design, built with HTML, CSS, and JavaScript.
+A modern, responsive website for Octal Data, built with HTML, CSS, and JavaScript.
 
 ## Features
 
